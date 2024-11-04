@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.android.jetgpstracker"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.android.jetgpstracker"
@@ -63,7 +63,7 @@ dependencies {
     implementation(libs.play.services.location)
     implementation(libs.eventbus)
     implementation(libs.translate)
-
+    implementation("com.google.android.gms:play-services-location:21.3.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
